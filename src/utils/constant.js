@@ -3,4 +3,5 @@ export const screenName = {
   proifile: 'Proifile',
   stream: 'Stream',
   detail: 'Detail',
+  homeTab: 'HomeTab',
 };

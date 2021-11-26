@@ -20,3 +20,10 @@ export const mapIP = result => {
   }
   return result;
 };
+export const detechUrlByPlatform = () => {
+  let baseUrl = 'localhost:3000';
+  if (Platform.OS === 'android') {
+    baseUrl = '10.0.2.2:3000';
+  }
+  return baseUrl;
+};

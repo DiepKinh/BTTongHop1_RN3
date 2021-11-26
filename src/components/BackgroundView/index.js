@@ -1,13 +1,11 @@
 import React, {Component} from 'react';
-import {Text, StyleSheet, View, StatusBar} from 'react-native';
-import {SafeAreaView} from 'react-native-safe-area-context';
+import {Text, StyleSheet, View, StatusBar, SafeAreaView} from 'react-native';
 import {COLORS} from '../../themes/styles';
-
 export default class BackgroundView extends Component {
   render() {
-    const {children} = this.props;
+    const {children, edges} = this.props;
     return (
-      <SafeAreaView style={styles.container}>
+      <SafeAreaView style={styles.container} edges={edges}>
         <StatusBar
           barStyle="light-content"
           backgroundColor={COLORS.lightBack}
