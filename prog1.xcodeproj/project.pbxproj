@@ -17,6 +17,9 @@
 		842DE09C2872985E005F8227 /* prog1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 842DE09B2872985E005F8227 /* prog1Tests.m */; };
 		842DE0A62872985E005F8227 /* prog1UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 842DE0A52872985E005F8227 /* prog1UITests.m */; };
 		842DE0A82872985E005F8227 /* prog1UITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 842DE0A72872985E005F8227 /* prog1UITestsLaunchTests.m */; };
+		842DE0BC2872EFE2005F8227 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 842DE0BB2872EFE2005F8227 /* Person.m */; };
+		842DE0C22872F691005F8227 /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = 842DE0C12872F691005F8227 /* Employee.m */; };
+		842DE0C52873D1C8005F8227 /* Company.m in Sources */ = {isa = PBXBuildFile; fileRef = 842DE0C42873D1C8005F8227 /* Company.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,12 @@
 		842DE0A12872985E005F8227 /* prog1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = prog1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		842DE0A52872985E005F8227 /* prog1UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = prog1UITests.m; sourceTree = "<group>"; };
 		842DE0A72872985E005F8227 /* prog1UITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = prog1UITestsLaunchTests.m; sourceTree = "<group>"; };
+		842DE0BA2872EFE2005F8227 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		842DE0BB2872EFE2005F8227 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		842DE0C02872F691005F8227 /* Employee.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
+		842DE0C12872F691005F8227 /* Employee.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
+		842DE0C32873D1C8005F8227 /* Company.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Company.h; sourceTree = "<group>"; };
+		842DE0C42873D1C8005F8227 /* Company.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Company.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,12 +113,16 @@
 		842DE07E2872985D005F8227 /* prog1 */ = {
 			isa = PBXGroup;
 			children = (
+				842DE0D028741960005F8227 /* Assets */,
+				842DE0CE28741940005F8227 /* Resource */,
+				842DE0CD28741933005F8227 /* Library */,
+				842DE0CC287410C2005F8227 /* ViewControls */,
+				842DE0CB287410AB005F8227 /* Models */,
+				842DE0C62874104A005F8227 /* Controllers */,
 				842DE07F2872985D005F8227 /* AppDelegate.h */,
 				842DE0802872985D005F8227 /* AppDelegate.m */,
 				842DE0822872985D005F8227 /* SceneDelegate.h */,
 				842DE0832872985D005F8227 /* SceneDelegate.m */,
-				842DE0852872985D005F8227 /* ViewController.h */,
-				842DE0862872985D005F8227 /* ViewController.m */,
 				842DE0882872985D005F8227 /* Main.storyboard */,
 				842DE08B2872985E005F8227 /* Assets.xcassets */,
 				842DE08D2872985E005F8227 /* LaunchScreen.storyboard */,
@@ -134,6 +147,56 @@
 				842DE0A72872985E005F8227 /* prog1UITestsLaunchTests.m */,
 			);
 			path = prog1UITests;
+			sourceTree = "<group>";
+		};
+		842DE0C62874104A005F8227 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				842DE0852872985D005F8227 /* ViewController.h */,
+				842DE0862872985D005F8227 /* ViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		842DE0CB287410AB005F8227 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				842DE0BA2872EFE2005F8227 /* Person.h */,
+				842DE0BB2872EFE2005F8227 /* Person.m */,
+				842DE0C02872F691005F8227 /* Employee.h */,
+				842DE0C12872F691005F8227 /* Employee.m */,
+				842DE0C32873D1C8005F8227 /* Company.h */,
+				842DE0C42873D1C8005F8227 /* Company.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		842DE0CC287410C2005F8227 /* ViewControls */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControls;
+			sourceTree = "<group>";
+		};
+		842DE0CD28741933005F8227 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		842DE0CE28741940005F8227 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		842DE0D028741960005F8227 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,8 +331,11 @@
 			files = (
 				842DE0872872985D005F8227 /* ViewController.m in Sources */,
 				842DE0812872985D005F8227 /* AppDelegate.m in Sources */,
+				842DE0BC2872EFE2005F8227 /* Person.m in Sources */,
+				842DE0C22872F691005F8227 /* Employee.m in Sources */,
 				842DE0922872985E005F8227 /* main.m in Sources */,
 				842DE0842872985D005F8227 /* SceneDelegate.m in Sources */,
+				842DE0C52873D1C8005F8227 /* Company.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +510,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DT3Z948PXW;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = prog1/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -470,6 +537,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DT3Z948PXW;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = prog1/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
